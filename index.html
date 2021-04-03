@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click & Slide</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/popup.css">
+    <link rel="stylesheet" href="/styles/leaderboard popup.css">
+</head>
+
+<body>
+    <main class="flex-vertical">
+        <div id="slider" class="flex-horizontal">
+            <img src="./img/left.png" alt="" id="prev">
+            <div id="sliderContent">
+                <div id="sliderInner">
+                    <img src="/img/1.jpg" alt="" class="slide">
+                    <img src="/img/2.jpg" alt="" class="slide">
+                    <img src="/img/3.jpg" alt="" class="slide">
+                    <img src="/img/4.jpg" alt="" class="slide">
+                    <img src="/img/5.jpg" alt="" class="slide">
+                    <img src="/img/6.jpg" alt="" class="slide">
+                </div>
+            </div>
+            <img src="./img/right.png" alt="" id="next">
+        </div>
+        <div id="buttons">
+            <button value="3">3 x 3</button>
+            <button value="4">4 x 4</button>
+            <button value="5">5 x 5</button>
+            <button value="6">6 x 6</button>
+        </div>
+        <div id="time" class="flex-horizontal">
+            <img src="./img/c0.gif" alt="" srcset="" id="h1">
+            <img src="./img/c0.gif" alt="" srcset="" id="h2">
+            <img src="./img/colon.gif" alt="" srcset="">
+            <img src="./img/c0.gif" alt="" srcset="" id="m1">
+            <img src="./img/c0.gif" alt="" srcset="" id="m2">
+            <img src="./img/colon.gif" alt="" srcset="">
+            <img src="./img/c0.gif" alt="" srcset="" id="s1">
+            <img src="./img/c0.gif" alt="" srcset="" id="s2">
+            <img src="./img/dot.gif" alt="" srcset="">
+            <img src="./img/c0.gif" alt="" srcset="" id="ms1">
+            <img src="./img/c0.gif" alt="" srcset="" id="ms2">
+            <img src="./img/c0.gif" alt="" srcset="" id="ms3">
+        </div>
+        <div id="boardContainer"></div>
+    </main>
+
+    <script type="module" src="/scripts/app.js"></script>
+</body>
+
+</html>

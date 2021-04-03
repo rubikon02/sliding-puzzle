@@ -1,0 +1,80 @@
+pop-up {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    animation: showPopup 1s;
+}
+pop-up:after {
+    content: "";
+    width: 100%;
+    height: 200%;
+    background-color: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+pop-up button {
+    cursor: pointer;
+}
+pop-up #leaderboard:hover,pop-up #save:hover {
+    background-color: var(--blueAccent);
+}
+pop-up #close:hover {
+    background-color: var(--redAccent);
+}
+@keyframes showPopup {
+    0% {
+        opacity: 0; 
+        top:-1000px;
+    }
+    70% {
+        opacity:1
+    }
+    100% {
+        top:0px;
+    }
+}
+pop-up .content{
+    /* border: 2px solid black; */
+    background-color: #fefefe;
+    width: 80%;
+    max-width: 600px;
+    margin: 15% auto;
+}
+pop-up .text {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+pop-up .buttons {
+    display: flex;
+    justify-content: space-around;
+}
+pop-up #close{
+    background-color: var(--red);
+}
+pop-up #leaderboard,pop-up #save{
+    background-color: var(--blue);
+}
+
+pop-up button{
+    border: 1px solid black;
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px;
+}
+pop-up input#name {
+    margin-left: 10px;
+}
+pop-up .text > div {
+    margin-top: 10px;
+    margin-bottom: -10px;
+}

@@ -1,0 +1,103 @@
+/* general */
+
+:root {
+    --red: #ff8888;
+    --blue: #abcdef;
+    --redAccent: #ff7777;
+    --blueAccent: #9abcef;
+    --gray: #ebebeb;
+    --green: #aaffaa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: black;
+    user-select: none;
+}
+
+.flex-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notransition {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
+/* slider */
+
+img {
+    width: 100%;
+}
+
+button {
+    margin: 10px;
+}
+
+#sliderContent {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border: 1px solid orange;
+    z-index: -10;
+}
+
+#sliderInner {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.slide {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+/* game */
+
+#boardContainer {
+    width: 360px;
+    height: 360px;
+    border: 1px solid orange;
+    position: relative;
+    /* box-sizing: border-box; */
+}
+
+canvas {
+    position: absolute;
+    margin-bottom: -4px;
+}
+
+
+
+
+#time {
+    color: white !important;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+#time img {
+    width: 20px;
+    height: 30px;
+}
+
+#slider > img {
+    width: 25px;
+    margin: 15px;
+}
